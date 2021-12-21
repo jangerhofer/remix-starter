@@ -1,5 +1,6 @@
 import {
   Links,
+  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
@@ -7,6 +8,28 @@ import {
   ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
+
+import tailwindStyles from "~/styles/app.css";
+
+export let links: LinksFunction = () => {
+  return [
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+      crossOrigin: "anonymous",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous",
+    },
+    { rel: "stylesheet", href: tailwindStyles },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",
+    },
+  ];
+};
 
 export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
