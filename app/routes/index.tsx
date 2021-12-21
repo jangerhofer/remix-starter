@@ -1,6 +1,6 @@
 export default function Index() {
   return (
-    <div className="min-h-screen min-w-full flex">
+    <div className="flex min-w-full min-h-screen">
       <div className="container p-10 mx-auto">
         <h1 className="prose-xl">Welcome to Remix</h1>
         <ul>
