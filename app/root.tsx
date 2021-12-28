@@ -11,22 +11,22 @@ import type { MetaFunction } from "remix";
 
 import tailwindStyles from "~/styles/app.css";
 
-export let links: LinksFunction = () => {
+export const links: LinksFunction = () => {
   return [
     {
-      rel: "preconnect",
+      crossOrigin: "anonymous",
       href: "https://fonts.googleapis.com",
-      crossOrigin: "anonymous",
-    },
-    {
       rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossOrigin: "anonymous",
     },
-    { rel: "stylesheet", href: tailwindStyles },
     {
-      rel: "stylesheet",
+      crossOrigin: "anonymous",
+      href: "https://fonts.gstatic.com",
+      rel: "preconnect",
+    },
+    { href: tailwindStyles, rel: "stylesheet" },
+    {
       href: "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",
+      rel: "stylesheet",
     },
   ];
 };
@@ -40,7 +40,7 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta content="width=device-width,initial-scale=1" name="viewport" />
         <Meta />
         <Links />
       </head>
