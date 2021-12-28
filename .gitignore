@@ -5,4 +5,5 @@ server/build
 public/build
 .env
 
-app/styles/app.css
+src/styles/app.css
+.DS_Store
