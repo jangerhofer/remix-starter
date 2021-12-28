@@ -6,3 +6,4 @@ public/build
 .env
 
 app/styles/app.css
+.DS_Store
