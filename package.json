@@ -61,7 +61,8 @@
     "lint": "eslint --fix .",
     "postinstall": "remix setup node",
     "prepare": "husky install",
-    "start": "cross-env NODE_ENV=production node server/index.js"
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "typecheck": "tsc"
   },
   "sideEffects": false
 }

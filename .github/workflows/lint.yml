@@ -1,0 +1,16 @@
+name: Lint & Typecheck
+on:
+  pull_request:
+    types: [opened, ready_for_review, reopened, synchronize]
+jobs:
+  clean-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.13.0"
+          cache: "npm"
+      - run: npm install
+      - run: npm run lint
+      - run: npm run typecheck
