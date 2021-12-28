@@ -45,7 +45,7 @@ If you're familiar with deploying express applications you should be right at ho
 
 ### Using a Template
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `src/` folder to the new project that's pre-configured for your target server.
 
 ```sh
 cd ..
@@ -55,5 +55,5 @@ cd my-new-remix-app
 # remove the new project's app (not the old one!)
 rm -rf app
 # copy your app over
-cp -R ../my-old-remix-app/app app
+cp -R ../my-old-remix-src/app app
 ```

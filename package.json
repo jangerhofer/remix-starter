@@ -54,7 +54,7 @@
   "scripts": {
     "build": "remix build",
     "dev": "NODE_ENV=development run-p dev:*",
-    "dev:css": "tailwindcss -i ./app/styles/tailwind.css -o ./app/styles/app.css --watch",
+    "dev:css": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/app.css --watch",
     "dev:remix": "remix watch",
     "dev:server": "cross-env NODE_ENV=development node server/index.js",
     "format": "prettier --write .",
