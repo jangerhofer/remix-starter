@@ -25,7 +25,7 @@
     "eslint-config-remix": "0.0.2",
     "eslint-import-resolver-typescript": "2.7.1",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react": "7.31.4",
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-tailwindcss": "3.6.1",
